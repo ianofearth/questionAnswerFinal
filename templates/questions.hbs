@@ -1,9 +1,23 @@
-<h1>Questions</h1>
+<div class="display">
 
-<ul>
-  {{#each}}
-  <li>{{#link-to 'question' this.id}}{{question}}{{/link-to}} --  Submitted by: {{author}}</li>
-  {{/each}}
-</ul>
+    <h1>Questions:</h1>
 
-<p>{{#link-to 'new-question' classNames="btn btn-primary"}}Ask Question{{/link-to}}</p>
+    <ul>
+      {{#each}}
+      <div class="question">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>{{#link-to 'question' this.id}}{{question}}{{/link-to}}</h2>
+          </div>
+          <div class="col-md-6">
+            <h4>Submitted by: {{author}}</h4>
+          </div>
+        </div>
+      </div>
+      <br>
+      {{/each}}
+    </ul>
+
+
+  <p>{{#link-to 'new-question' classNames="btn btn-primary"}}Ask Question{{/link-to}}</p>
+</div>
