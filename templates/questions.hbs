@@ -1,9 +1,8 @@
 <h1>Questions</h1>
 
-<!-- {{question}}{{author}} -->
 <ul>
   {{#each}}
-  <li>{{#link-to 'question' this.id}}{{question}}{{author}}{{/link-to}}</li>
+  <li>{{#link-to 'question' this.id}}{{question}}{{/link-to}} --  Submitted by: {{author}}</li>
   {{/each}}
 </ul>
 
