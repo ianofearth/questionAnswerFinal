@@ -1,0 +1,1 @@
+QuestionAnswer = Ember.Application.create();
