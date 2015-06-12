@@ -1,4 +1,31 @@
 <h1>{{question}}</h1>
-<h5>Submitted by: {{author}}</h5>
-<p>Additional information:</p>
+<h3>Submitted by: {{author}}</h3>
+<h3>Additional information:</h3>
 <p>{{description}}</p>
+
+{{#if isEditing}}
+<form>
+<div class="form-group">
+  <label for="question">Change Question to: </label>
+  {{input id="question" class="form-control" value=question}}
+</div>
+
+<div class="form-group">
+  <label for="author">Change Author to: </label>
+  {{input id="author" class="form-control" value=author}}
+</div>
+
+<div class="form-group">
+  <label for="description">Change Description to: </label>
+  {{textarea id="description" class="form-control" rows="15" value=description}}
+</div>
+<button class="btn btn-primary" {{action 'save'}}>Update this Question's Information</button>
+</form>
+
+{{else}}
+<button class="btn btn-primary" {{action 'edit'}}>Edit this Question's Information</button>
+
+{{/if}}
+
+
+{{outlet}}
