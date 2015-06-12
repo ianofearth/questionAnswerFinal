@@ -1,7 +1,7 @@
 #Author Name: Ian Bevel
 #Program Name: Question and Answer
 #Description: 
-<p>Question and Answer is an application in Ember that will allow a user to enter questions and answers to those questions.  It also allows for editing and deleting those questions and answers once they have been added.</p>
+<p>Question and Answer is an application in Ember that will allow a user to enter questions and answers to those questions.  It also allows for editing and deleting those questions and answers once they have been added.  It uses a local store as a database to save the information for the page so the user can leave the page at any time and come back to the same computer to view the saved questions and answers.</p>
 #Set-up instructions: 
 <ol>
 <li>Go to www.github.com/ianofearth</li>
