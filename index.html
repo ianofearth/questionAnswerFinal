@@ -4,6 +4,7 @@
     <title>Question and Answer</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <script src="libs/jquery-1.11.1.js"></script>
     <script src="libs/ember-template-compiler-1.10.0.js"></script>
@@ -18,10 +19,12 @@
 
     <script src="/routes/questions.js"></script>
     <script src="/routes/question.js"></script>
+    <script src="/routes/answer.js"></script>
 
     <script src="/controllers/question.js"></script>
     <script src="/controllers/new-question.js"></script>
     <script src="/controllers/new-answer.js"></script>
+    <script src="/controllers/answer.js"></script>
 
     <script src="models/question.js"></script>
     <script src="models/answer.js"></script>
@@ -30,7 +33,7 @@
 
     <script>
     EmberHandlebarsLoader.loadTemplates([
-      'questions', 'new-question', 'question', 'new-answer'
+      'questions', 'new-question', 'question', 'new-answer', 'answer', 'application'
     ]);
     </script>
 

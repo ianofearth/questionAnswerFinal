@@ -4,5 +4,5 @@ QuestionAnswer.Router.map(function(){
     this.resource('new-answer');
   });
   this.resource('new-question');
-  // this.resource('answer', {path: '/answer/:answer_id'});
+  this.resource('answer', {path: '/answer/:answer_id'});
 });
