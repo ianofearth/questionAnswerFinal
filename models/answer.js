@@ -1,6 +1,6 @@
 QuestionAnswer.Answer = DS.Model.extend({
-  answer: DS.attr(),
   answerer: DS.attr(),
+  answer: DS.attr(),
 
-  question: DS.belongTo('question', {async: true})
+  question: DS.belongsTo('question', {async: true})
 });
